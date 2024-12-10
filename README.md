@@ -6,12 +6,12 @@
 - [1. Introduction & Objectives](#1)
   - [1.1 Background](#1.1)
   - [1.2 Objectives](#1.2)
+  - [1.3 Data](#1.3)
 - [2. File Structure](#2)
 - [3. Tasks & Workflows](#3)
   - [3.1 Spot-level Prediction](#3.1)
   - [3.2 Unsupervised Clustering](#3.2)
-- [4. Usage Guide](#4)
-- [5. Results](#5)
+- [4. Results](#4)
 - [6. References](#6)
 - [7. Acknowledgements](#7)
 
@@ -78,8 +78,10 @@ GigaPathCDT/
 - **`supervised_eval/visium_hd/`**
 - **Fibroblast**
 <img src="https://github.com/Nina-Song/stViTDecoder/blob/main/data/fibroblast.png" alt="fibro" width="400"/>
+
 - **Epithelial**
-![epi](https://github.com/Nina-Song/stViTDecoder/blob/main/data/epithelial.png)
+<img src="https://github.com/Nina-Song/stViTDecoder/blob/main/data/epithelial.png" alt="fibro" width="400"/>
+
   - `cell_type_embed.py`: Generates cell type-based labels (e.g., fibroblast vs. epithelial for colon cancer) for HD data using marker gene set expressions. Labels are determined using Gaussian Mixture Models (GMM) for binary (on/off) or tertile (high/mid/low) classification. Additionally, creates embeddings for each HD bin using Vision Transformer (ViT).
   - `main.py`: Implements a linear probe framework using PyTorch Lightning for HD data analysis and classification tasks.
   - `utils/`: Contains utility functions for preprocessing and image data loading, specifically designed for HD datasets.
@@ -108,13 +110,9 @@ GigaPathCDT/
    ```
    - Adjust the gene list directly in the script:
      ```python
-    gene_sets = {
-        "fibroblast": ['COL3A1', 'THY1'],
-        "epithelial": ['EPCAM']
-    }
+    gene_sets = {"fibroblast": ['COL3A1', 'THY1'], "epithelial": ['EPCAM'] }
      ```
-
-   - Labels can be created based on GMM (see `Generate clusters based on GMM`) or based on user selected fold change thershold (see `Generate clusters based on fold change thershold`)
+   - Labels can be created based on GMM (see 'Generate clusters based on GMM') or based on user selected fold change thershold (see 'Generate clusters based on fold change thershold' in the script)
 
 2. **Run Prediction**
    ```bash
@@ -143,7 +141,7 @@ GigaPathCDT/
    ```
 
 ## <h2 id="4"><font color=#00297D>4. Results</font></h2>
-### <h2 id="4.1"><font color=#00297D>4.1 Visium ST</font></h2>
+### <h3 id="4.1"><font color=#00297D>4.1 Visium ST</font></h2>
 ### **Cell-type Prediction (oligodendrocytes vs microglia) from GBM**
 * Test Accuracy: 0.922
 * f1: 0.921
@@ -151,7 +149,7 @@ GigaPathCDT/
 ### **Gene Prediction (top 10 Moran's I) from GBM**
 ![Result list](https://github.com/COHCCC/GigaPathCDT/blob/main/images/predicted_spatial_enrichment_genes.png)
 ---
-### <h2 id="4.2"><font color=#00297D>4.2 Visium HD</font></h2>
+### <h3 id="4.2"><font color=#00297D>4.2 Visium HD</font></h2>
 ### **Cell-type Prediction (oligodendrocytes vs microglia) from GBM**
 * Test Accuracy: 0.730
 * f1: 0.692
