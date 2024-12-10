@@ -139,7 +139,7 @@ Adjust the gene list directly in the script:
 * f1: 0.921
 * AUROC: 0.976
 ### **Gene Prediction (top 10 Moran's I) from GBM**
-<img src="https://github.com/COHCCC/GigaPathCDT/blob/main/images/predicted_spatial_enrichment_genes.png" alt="morani" width="400"/>
+<img src="https://github.com/COHCCC/GigaPathCDT/blob/main/images/predicted_spatial_enrichment_genes.png" alt="morani" width="100"/>
 ---
 ### <h3 id="4.2"><font color=#00297D>4.2 Visium HD</font></h2>
 ### **Cell-type Prediction (oligodendrocytes vs microglia) from GBM**
