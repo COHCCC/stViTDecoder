@@ -1,5 +1,5 @@
 
-# <span id="jump"><font color=#00297D>Integrating Spatial Transcriptomics and Histopathology with Deep Learning</font></div></span>
+# <span id="jump"><font color=#00297D>Decoding tumor microenvironment with deep learning: Merging spatial transcriptomics and histopathology</font></div></span>
 
 ## <font color=#00297D>Index</font>
 
