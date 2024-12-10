@@ -77,7 +77,7 @@ GigaPathCDT/
 #### **Supervised Evaluation**
 - **`supervised_eval/visium_hd/`**
 - **Fibroblast**
-![fibro](https://github.com/Nina-Song/stViTDecoder/blob/main/data/fibroblast.png)
+<img src="https://github.com/Nina-Song/stViTDecoder/blob/main/data/fibroblast.png" alt="fibro" width="400"/>
 - **Epithelial**
 ![epi](https://github.com/Nina-Song/stViTDecoder/blob/main/data/epithelial.png)
   - `cell_type_embed.py`: Generates cell type-based labels (e.g., fibroblast vs. epithelial for colon cancer) for HD data using marker gene set expressions. Labels are determined using Gaussian Mixture Models (GMM) for binary (on/off) or tertile (high/mid/low) classification. Additionally, creates embeddings for each HD bin using Vision Transformer (ViT).
