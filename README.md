@@ -76,12 +76,6 @@ GigaPathCDT/
 
 #### **Supervised Evaluation**
 - **`supervised_eval/visium_hd/`**
-- **Fibroblast**
-<img src="https://github.com/Nina-Song/stViTDecoder/blob/main/data/fibroblast.png" alt="fibro" width="400"/>
-
-- **Epithelial**
-<img src="https://github.com/Nina-Song/stViTDecoder/blob/main/data/epithelial.png" alt="fibro" width="400"/>
-
   - `cell_type_embed.py`: Generates cell type-based labels (e.g., fibroblast vs. epithelial for colon cancer) for HD data using marker gene set expressions. Labels are determined using Gaussian Mixture Models (GMM) for binary (on/off) or tertile (high/mid/low) classification. Additionally, creates embeddings for each HD bin using Vision Transformer (ViT).
   - `main.py`: Implements a linear probe framework using PyTorch Lightning for HD data analysis and classification tasks.
   - `utils/`: Contains utility functions for preprocessing and image data loading, specifically designed for HD datasets.
@@ -109,7 +103,7 @@ GigaPathCDT/
    python src/supervised_eval/visium_st/cell_type_embed.py
    ```
    - Adjust the gene list directly in the script:
-     ```python
+     ```
     gene_sets = {"fibroblast": ['COL3A1', 'THY1'], "epithelial": ['EPCAM'] }
      ```
    - Labels can be created based on GMM (see 'Generate clusters based on GMM') or based on user selected fold change thershold (see 'Generate clusters based on fold change thershold' in the script)
@@ -154,7 +148,11 @@ GigaPathCDT/
 * Test Accuracy: 0.730
 * f1: 0.692
 * AUROC: 0.774
+- **Fibroblast**
+<img src="https://github.com/Nina-Song/stViTDecoder/blob/main/data/fibroblast.png" alt="fibro" width="400"/>
 
+- **Epithelial**
+<img src="https://github.com/Nina-Song/stViTDecoder/blob/main/data/epithelial.png" alt="fibro" width="400"/>
 ## <h2 id="5"><font color=#00297D>5. Usage Guide</font></h2>
 
 ### **Prerequisites**
