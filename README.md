@@ -147,6 +147,7 @@ Adjust the gene list directly in the script:
 * Test Accuracy: 0.730
 * f1: 0.692
 * AUROC: 0.774
+
 **Fibroblast**
 <img src="https://github.com/Nina-Song/stViTDecoder/blob/main/data/fibroblast.png" alt="fibro" width="400"/>
 
