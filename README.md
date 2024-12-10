@@ -37,7 +37,7 @@ Spatial transcriptomics (ST) provides unprecedented insights into the spatial la
 The repository is structured as follows:
 
 ```plaintext
-GigaPathCDT/
+stViTDecoder/
 ├── data/                         # Raw and processed data
 ├── preprocessing/                
 ├── results/                      
@@ -139,7 +139,7 @@ Adjust the gene list directly in the script:
 * f1: 0.921
 * AUROC: 0.976
 ### **Gene Prediction (top 10 Moran's I) from GBM**
-![Result list](https://github.com/COHCCC/GigaPathCDT/blob/main/images/predicted_spatial_enrichment_genes.png)
+<img src="https://github.com/COHCCC/GigaPathCDT/blob/main/images/predicted_spatial_enrichment_genes.png" alt="morani" width="400"/>
 ---
 ### <h3 id="4.2"><font color=#00297D>4.2 Visium HD</font></h2>
 ### **Cell-type Prediction (oligodendrocytes vs microglia) from GBM**
@@ -150,7 +150,7 @@ Adjust the gene list directly in the script:
 <img src="https://github.com/Nina-Song/stViTDecoder/blob/main/data/fibroblast.png" alt="fibro" width="400"/>
 
 - **Epithelial**
-<img src="https://github.com/Nina-Song/stViTDecoder/blob/main/data/epithelial.png" alt="fibro" width="400"/>
+<img src="https://github.com/Nina-Song/stViTDecoder/blob/main/data/epithelial.png" alt="epi" width="400"/>
 ## <h2 id="5"><font color=#00297D>5. Usage Guide</font></h2>
 
 ### **Prerequisites**
