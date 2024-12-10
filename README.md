@@ -139,17 +139,18 @@ Adjust the gene list directly in the script:
 * f1: 0.921
 * AUROC: 0.976
 ### **Gene Prediction (top 10 Moran's I) from GBM**
-<img src="https://github.com/COHCCC/GigaPathCDT/blob/main/images/predicted_spatial_enrichment_genes.png" alt="morani" width="100"/>
+<img src="https://github.com/COHCCC/GigaPathCDT/blob/main/images/predicted_spatial_enrichment_genes.png" alt="morani" width="150"/>
+
 ---
 ### <h3 id="4.2"><font color=#00297D>4.2 Visium HD</font></h2>
 ### **Cell-type Prediction (oligodendrocytes vs microglia) from GBM**
 * Test Accuracy: 0.730
 * f1: 0.692
 * AUROC: 0.774
-- **Fibroblast**
+**Fibroblast**
 <img src="https://github.com/Nina-Song/stViTDecoder/blob/main/data/fibroblast.png" alt="fibro" width="400"/>
 
-- **Epithelial**
+**Epithelial**
 <img src="https://github.com/Nina-Song/stViTDecoder/blob/main/data/epithelial.png" alt="epi" width="400"/>
 ## <h2 id="5"><font color=#00297D>5. Usage Guide</font></h2>
 
