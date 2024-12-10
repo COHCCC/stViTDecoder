@@ -99,14 +99,12 @@ GigaPathCDT/
 ### <h2 id="3.1"><font color=#00297D>3.1 Spot-level Prediction</font></h2>
 
 1. **Generate Spot-Level Image Embeddings Based on Cell Types**
-   ```bash
+    ```bash
    python src/supervised_eval/visium_st/cell_type_embed.py
-   ```
-   - Adjust the gene list directly in the script:
-     ```
-    gene_sets = {"fibroblast": ['COL3A1', 'THY1'], "epithelial": ['EPCAM'] }
-     ```
-   - Labels can be created based on GMM (see 'Generate clusters based on GMM') or based on user selected fold change thershold (see 'Generate clusters based on fold change thershold' in the script)
+    ```
+Adjust the gene list directly in the script: 
+```gene_sets = {"fibroblast": ['COL3A1', 'THY1'], "epithelial": ['EPCAM'] }```
+* Labels can be created based on GMM (see 'Generate clusters based on GMM') or based on user selected fold change thershold (see 'Generate clusters based on fold change thershold' in the script)
 
 2. **Run Prediction**
    ```bash
